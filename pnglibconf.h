@@ -257,6 +257,7 @@
 #define png_free_default wx_png_free_default
 #define png_get_IHDR wx_png_get_IHDR
 #define png_get_PLTE wx_png_get_PLTE
+#define png_get_acTL wx_png_get_acTL
 #define png_get_bKGD wx_png_get_bKGD
 #define png_get_bit_depth wx_png_get_bit_depth
 #define png_get_cHRM wx_png_get_cHRM
@@ -279,6 +280,7 @@
 #define png_get_eXIf_1 wx_png_get_eXIf_1
 #define png_get_error_ptr wx_png_get_error_ptr
 #define png_get_filter_type wx_png_get_filter_type
+#define png_get_first_frame_is_hidden wx_png_get_first_frame_is_hidden
 #define png_get_gAMA wx_png_get_gAMA
 #define png_get_gAMA_fixed wx_png_get_gAMA_fixed
 #define png_get_hIST wx_png_get_hIST
@@ -296,6 +298,17 @@
 #define png_get_mDCV wx_png_get_mDCV
 #define png_get_mDCV_fixed wx_png_get_mDCV_fixed
 #define png_get_mem_ptr wx_png_get_mem_ptr
+#define png_get_next_frame_blend_op wx_png_get_next_frame_blend_op
+#define png_get_next_frame_delay_den wx_png_get_next_frame_delay_den
+#define png_get_next_frame_delay_num wx_png_get_next_frame_delay_num
+#define png_get_next_frame_dispose_op wx_png_get_next_frame_dispose_op
+#define png_get_next_frame_fcTL wx_png_get_next_frame_fcTL
+#define png_get_next_frame_height wx_png_get_next_frame_height
+#define png_get_next_frame_width wx_png_get_next_frame_width
+#define png_get_next_frame_x_offset wx_png_get_next_frame_x_offset
+#define png_get_next_frame_y_offset wx_png_get_next_frame_y_offset
+#define png_get_num_frames wx_png_get_num_frames
+#define png_get_num_plays wx_png_get_num_plays
 #define png_get_oFFs wx_png_get_oFFs
 #define png_get_pCAL wx_png_get_pCAL
 #define png_get_pHYs wx_png_get_pHYs
@@ -361,6 +374,7 @@
 #define png_process_data_skip wx_png_process_data_skip
 #define png_progressive_combine_row wx_png_progressive_combine_row
 #define png_read_end wx_png_read_end
+#define png_read_frame_head wx_png_read_frame_head
 #define png_read_image wx_png_read_image
 #define png_read_info wx_png_read_info
 #define png_read_png wx_png_read_png
@@ -373,6 +387,7 @@
 #define png_save_uint_32 wx_png_save_uint_32
 #define png_set_IHDR wx_png_set_IHDR
 #define png_set_PLTE wx_png_set_PLTE
+#define png_set_acTL wx_png_set_acTL
 #define png_set_add_alpha wx_png_set_add_alpha
 #define png_set_alpha_mode wx_png_set_alpha_mode
 #define png_set_alpha_mode_fixed wx_png_set_alpha_mode_fixed
@@ -408,6 +423,7 @@
 #define png_set_filter wx_png_set_filter
 #define png_set_filter_heuristics wx_png_set_filter_heuristics
 #define png_set_filter_heuristics_fixed wx_png_set_filter_heuristics_fixed
+#define png_set_first_frame_is_hidden wx_png_set_first_frame_is_hidden
 #define png_set_flush wx_png_set_flush
 #define png_set_gAMA wx_png_set_gAMA
 #define png_set_gAMA_fixed wx_png_set_gAMA_fixed
@@ -425,6 +441,7 @@
 #define png_set_mDCV wx_png_set_mDCV
 #define png_set_mDCV_fixed wx_png_set_mDCV_fixed
 #define png_set_mem_fn wx_png_set_mem_fn
+#define png_set_next_frame_fcTL wx_png_set_next_frame_fcTL
 #define png_set_oFFs wx_png_set_oFFs
 #define png_set_option wx_png_set_option
 #define png_set_pCAL wx_png_set_pCAL
@@ -432,6 +449,7 @@
 #define png_set_packing wx_png_set_packing
 #define png_set_packswap wx_png_set_packswap
 #define png_set_palette_to_rgb wx_png_set_palette_to_rgb
+#define png_set_progressive_frame_fn wx_png_set_progressive_frame_fn
 #define png_set_progressive_read_fn wx_png_set_progressive_read_fn
 #define png_set_quantize wx_png_set_quantize
 #define png_set_read_fn wx_png_set_read_fn
@@ -480,6 +498,8 @@
 #define png_write_chunk_start wx_png_write_chunk_start
 #define png_write_end wx_png_write_end
 #define png_write_flush wx_png_write_flush
+#define png_write_frame_head wx_png_write_frame_head
+#define png_write_frame_tail wx_png_write_frame_tail
 #define png_write_image wx_png_write_image
 #define png_write_info wx_png_write_info
 #define png_write_info_before_PLTE wx_png_write_info_before_PLTE
