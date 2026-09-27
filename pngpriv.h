@@ -214,10 +214,7 @@
        * enable SSE optimizations.  This means that these optimizations will
        * be off by default.  See contrib/intel for more details.
        */
-#      if defined(_MSC_VER) && _MSC_VER <= 1500
-           // Don't enable for VC9 and older: missing include file immintrin.h
-#          define PNG_INTEL_SSE_OPT 0
-#      elif defined(__SSE4_1__) || defined(__AVX__) || defined(__SSSE3__) || \
+#      if defined(__SSE4_1__) || defined(__AVX__) || defined(__SSSE3__) || \
        defined(__SSE2__) || defined(_M_X64) || defined(_M_AMD64) || \
        (defined(_M_IX86_FP) && _M_IX86_FP >= 2)
 #         define PNG_INTEL_SSE_OPT 1
